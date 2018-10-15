@@ -6,9 +6,11 @@ You give Cr3dOv3r Massive a list of emails then it does two simple useful jobs w
 - Search for public leaks for the emails and returns the result with the most useful details about the leak (Using haveibeenpwned API).
 - Tries to get the plain text passwords from leaks it find (Using [@GhostProjectME](https://twitter.com/GhostProjectME)).
 
-### Some of the scenarios Cr3dOv3r (Massive) can be used for:
-- Check if the targeted emails are in any leaks.
-- Get the password of these emails
+# Some of the scenarios Cr3dOv3r can be used in it
+- Check if the targeted email are in any leaks and then use the leaked password to check it against the websites.
+- Check if the target credentials you found is reused on other websites/services.
+- Checking if the old password you got from the targets/leaks is still used in any website.
+
 
 # Screenshots
 ![screenshot](https://github.com/HeroS3c/Cr3dOv3r/blob/master/Data/Screen1.png)
