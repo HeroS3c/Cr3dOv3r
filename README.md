@@ -66,8 +66,9 @@ docker run -it cr3dov3r "test@example.com"
 **If you want to add a website to the tool, follow the instructions in the [wiki](https://github.com/D4Vinci/Cr3dOv3r/wiki)**
 
 ## Contact
-- [Twitter](https://twitter.com/D4Vinci1)
 
+D4Vinci- [Twitter](https://twitter.com/D4Vinci1)
+HeroS3c- [Telegram](https://t.me/HeroS3c)
 ## Disclaimer
 Cr3dOv3r is created to show how could credential reuse attacks get dangerous and it's not responsible for misuse or illegal purposes. Use it only for Pen-test or educational purpose !!!
 
