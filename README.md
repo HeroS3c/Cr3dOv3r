@@ -17,7 +17,7 @@ You give Cr3dOv3r an email then it does two simple useful jobs with it:
 # Usage
 ```
 Put your list of emails in email.json file (in the correct form, e.g. ["example@example.com", "example1@example.com"] )
-Also you can run:
+However you can run:
 ....................................
 python getlistemail.py # (python 2)
 ....................................
