@@ -7,7 +7,7 @@ if sys.version[0] == '2':
     reload(sys)
     sys.setdefaultencoding("utf-8")
 
-UserAgent = {'User-Agent': 'Cr3dOv3r-Framework'}
+UserAgent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.1'}
 def check_haveibeenpwned(email):
     #from haveibeenpwnd API docs from https://haveibeenpwned.com/API/v2#BreachesForAccount
     url = "https://haveibeenpwned.com/api/v2/breachedaccount/"+str(email)

@@ -24,11 +24,10 @@ ask = { "url":"https://ask.fm/login" ,
 
 #linkedin
 #the reason for LinkedIn false positives :3 it's because of captcha appears from the second attempt!
-# let's solve that
-linkedin = { "url":"https://www.linkedin.com/uas/login" ,
-	"form":'#login',
-	"e_form":"session_key" ,
-	"p_form":"session_password" }
+#linkedin = { "url":"https://www.linkedin.com/uas/login" ,
+#	"form":'#login',
+#	"e_form":"session_key" ,
+#	"p_form":"session_password" }
 
 #Github
 github = { "url":"https://github.com/login" ,
@@ -119,7 +118,6 @@ websites  = {" Facebook":facebook,
 			 " Ask.fm  ":ask,
 			 " Github  ":github,
 			 "Virustotal":virustotal,
-			 "LinkedIn ":linkedin,
              " Ebay.com":ebay,
              "Wikipedia":wikipedia,
 			 " Airdroid":air,

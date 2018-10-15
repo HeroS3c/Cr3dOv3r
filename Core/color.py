@@ -20,7 +20,7 @@ def set_colors():
 		#import colorama
 		#colorama.init()
 		#green - yellow - blue - red - white - magenta - cyan - reset
-		G,Y,B,R,W,M,C,end= '\033[92m','\033[93m','\033[94m','\033[91m','\x1b[37m','\x1b[35m','\x1b[36m','\033[0m'
+		G,Y,B,R,W,M,C,end= '\033[92m','\033[93m','\033[94m','\033[91m','\x1b[37m','\x1b[35m','\x1b[36m','\033[30m'
 		Bold = "\033[1m"
 		underline = "\033[4m"
 
