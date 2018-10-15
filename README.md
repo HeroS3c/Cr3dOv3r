@@ -1,4 +1,4 @@
-# Cr3dOv3r [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) ![Build Status](https://img.shields.io/badge/Version-0.4.3-red.svg)
+# Cr3dOv3r [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) 
 
 **Your best friend in credential reuse attacks.**
 
@@ -35,9 +35,9 @@ To run the script.
 ```
 ## Installing and requirements
 ### To make the tool work at its best you must have :
-- Python 3.x or 2.x (preferred 3).
+- Python 2.x 
 - Linux or Windows system.
-- Worked on some machines with MacOS and python3.
+- Worked on some machines with MacOS and python2.
 - The requirements mentioned in the next few lines.
 
 ### Installing
@@ -51,8 +51,8 @@ python Cr3d0v3r.py -h
 ```
 git clone https://github.com/D4Vinci/Cr3dOv3r.git
 cd Cr3dOv3r
-python3 -m pip install -r requirements.txt
-python3 Cr3d0v3r.py -h
+python -m pip install -r requirements.txt
+python Cr3d0v3r.py -h
 ```
 
 **+For docker :**
