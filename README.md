@@ -1,15 +1,14 @@
-# Cr3dOv3r [![Python 3.5](https://img.shields.io/badge/Python-3.5-yellow.svg)](http://www.python.org/download/) [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) ![Build Status](https://img.shields.io/badge/Version-0.4.4-red.svg)
+# Cr3dOv3r [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) ![Build Status](https://img.shields.io/badge/Version-0.4.3-red.svg)
 
 **Your best friend in credential reuse attacks.**
 
-You give Cr3dOv3r an email then it does two simple useful jobs with it:
-- Search for public leaks for the email and returns the result with the most useful details about the leak (Using haveibeenpwned API) and tries to get the plain text passwords from leaks it find (Using [@GhostProjectME](https://twitter.com/GhostProjectME)).
-- Now you give it a password or a leaked password then it tries this credentials against some well-known websites (ex: Facebook, Twitter, Google...), tells if the login successful and if there's captcha some where blocking our way!
+You give Cr3dOv3r Massive a list of emails then it check for:
+- Public leaks for the email and returns the result with the most useful details about the leak (Using haveibeenpwned API) and tries to get the plain text passwords from leaks it find (Using [@GhostProjectME](https://twitter.com/GhostProjectME)).
+- Leaked password 
 
 ### Some of the scenarios Cr3dOv3r can be used in it
 - Check if the targeted email is in any leaks and then use the leaked password to check it against the websites.
 - Check if the target credentials you found is reused on other websites/services.
-- Checking if the old password you got from the target/leaks is still used in any website.
 
 # Screenshots
 ![screenshot](https://github.com/D4Vinci/Cr3dOv3r/blob/master/Data/Email1.png)
@@ -18,19 +17,21 @@ You give Cr3dOv3r an email then it does two simple useful jobs with it:
 
 # Usage
 ```
-usage: Cr3d0v3r.py [-h] [-p] [-np] [-q] email
+Put your list of emails in email.json file (in the correct form, e.g. ["example@example.com", "example1@example.com"] )
+Also you can run:
+....................................
+python getlistemail.py # (python 2)
+....................................
 
-positional arguments:
-  email       Email/username to check
+and follow the steps.
 
-optional arguments:
-  -h, --help  show this help message and exit
-  -p          Don't check for leaks or plain text passwords.
-  -np         Don't check for plain text passwords.
-  -q          Quiet mode (no banner).
+next type:
+....................................
+python Cr3d0v3r.py
+....................................
 
+To run the script.
 ```
-
 ## Installing and requirements
 ### To make the tool work at its best you must have :
 - Python 3.x or 2.x (preferred 3).
