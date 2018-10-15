@@ -34,9 +34,9 @@ To run the script.
 ```
 ## Installing and requirements
 ### To make the tool work at its best you must have :
-- Python 3.x or 2.x (preferred 3).
+- Python 2.x.
 - Linux or Windows system.
-- Worked on some machines with MacOS and python3.
+- Worked on some machines with MacOS and python2.
 - The requirements mentioned in the next few lines.
 
 ### Installing
