@@ -9,22 +9,26 @@ from Core.color import *
 import json
 
 parser = argparse.ArgumentParser(prog='Cr3d0v3r.py')
-parser.add_argument("-p",action="store_true", help="Don't check for leaks or plain text passwords.")
-parser.add_argument("-np",action="store_true", help="Don't check for plain text passwords.")
-parser.add_argument("-q",action="store_true", help="Quiet mode (no banner).")
+
+parser.add_argument("-np",action="store_true", help="Don't check for plain text passwords [currently not working]")
+parser.add_argument("-p",action="store_true", help="Don't check for leaks or plain text passwords [currently not working]")
+
+
 args    = parser.parse_args()
 
 os.system('clear')
 banner()
 
+test= raw_input(W+"Do you want test passwords againist websites? (this causes a slowdown) [y|N]")
+print "\n"
 pwd=0
 #import the list of emails
 try:
 	filename='email.json'
 	with open (filename) as f_obj:
 		emaillist= json.load(f_obj)
-except:
-	print "A problem was occured during opening email.json"
+except ValueError as e:
+	print ("An error occured during opening email.json, details:", e)
 	#start for loop 	
 
 def is_there_captcha(page_source):
@@ -133,20 +137,23 @@ def main():
 		if not args.p:
 			status("Checking email: "+email+" in public leaks...")
 			ispwned.parse_data(email,args.np)
+		
+		
 			
+		if test=="y" or test=="Y":	
 			
-		if pwd!=0:	
+				
 			print("")
 			status("Testing email against {} website".format( Y+str(len(all_websites))+G ))
-		
+			
 			for wd in list(websites.keys()):
 				dic = websites[wd]
 				login( wd ,dic ,email ,pwd )
-		
+				
 			for wd in list(custom_websites.keys()):
 				dic = custom_websites[wd]
 				custom_login( wd ,dic ,email ,pwd )
-		
+				
 			for wd in list(req_websites.keys()):
 				dic = req_websites[wd]
 				req_login( wd ,dic ,email ,pwd )		
