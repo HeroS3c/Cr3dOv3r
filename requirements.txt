@@ -1,3 +1,4 @@
 mechanicalsoup >=0.9
 requests>=2.18.4
 pyOpenSSL>=16.2.0
+cfscrape>=1.9.5
